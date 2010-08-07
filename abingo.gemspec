@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Wildfalcon"]
-  s.date = %q{2010-08-06}
+  s.date = %q{2010-08-07}
   s.description = %q{Incorperate AB Testing into your rails apps}
   s.email = %q{laurie@wildfalcon.com}
   s.extra_rdoc_files = [
@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
      "README",
      "Rakefile",
      "VERSION",
+     "abingo.gemspec",
      "init.rb",
      "install.rb",
      "lib/abingo.rb",
@@ -29,11 +30,19 @@ Gem::Specification.new do |s|
      "lib/abingo/conversion_rate.rb",
      "lib/abingo/experiment.rb",
      "lib/abingo/rails/controller/dashboard.rb",
+     "lib/abingo/railtie.rb",
      "lib/abingo/statistics.rb",
      "lib/abingo/views/dashboard/_experiment.erb",
      "lib/abingo/views/dashboard/index.erb",
      "lib/abingo_sugar.rb",
      "lib/abingo_view_helper.rb",
+     "lib/generators/abingo_migration/USAGE",
+     "lib/generators/abingo_migration/abingo_migration_generator.rb",
+     "lib/generators/abingo_migration/templates/create_abingo_tables.rb",
+     "lib/generators/abingo_views/USAGE",
+     "lib/generators/abingo_views/abingo_views_generator.rb",
+     "lib/generators/abingo_views/templates/views/dashboard/_experiment.html.erb",
+     "lib/generators/abingo_views/templates/views/dashboard/index.html.erb",
      "strip.rb",
      "tasks/abingo_tasks.rake",
      "test/abingo_test.rb",
