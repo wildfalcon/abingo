@@ -81,7 +81,6 @@ class Abingo
          while Abingo.cache.exist?(lock_key)
            sleep(0.1)
          end
-         break
        end
        Abingo.cache.write(lock_key, 1, :expires_in => 5.seconds)
        conversion_name = options[:conversion] || options[:conversion_name]
